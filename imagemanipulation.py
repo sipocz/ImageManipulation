@@ -10,7 +10,7 @@ image = Image.open('a.jpg')
 data = asarray(image)
 print(type(data))
 print(data)
-df=pd.DataFrame(data[:,:,1])
+df=pd.DataFrame(data[:,:,0]+data[:,:,1]+data[:,:,2])
 # summarize shape
 print(data.shape)
 
